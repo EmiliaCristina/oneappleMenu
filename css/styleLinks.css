@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html, body,  {
+  height: 100%;
+
+}
+
+
+#linkStyleBody {
+
+  color: #131313;
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+
+
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+
+  /* Makes the image fixed in the viewport so that it doesn't move when
+     the content height is greater than the image height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+
+}
+
+
+@media (min-width: 1025px) {
+    #linkStyleBody {
+	    background-image: url("../images/bgDeskstop.jpg");
+   }
+}
+
+@media  (max-width: 1024px) {
+  #linkStyleBody {
+        background-image: url("../images/bgTablet.jpg");
+    }
+}
+
+/* For width 400px and larger: */
+@media (min-width: 400px) and (max-width: 1024px) {
+#linkStyleBody  {
+    background-image: url("../images/bgMobile.jpg");
+    font-size: 25px;
+
+  }
+}
+
+@media (min-width: 400px) and (max-width: 1024px) {
+#linkStyleBody img {
+  top: 30%;
+  left: 65%;
+
+  }
+}
+
+  .containerList{
+    
+    padding-left: 5vh;
+    padding-top: 4vh;
+  }
+
+
+  .edgtf-ils-item-title:hover {
+      z-index: 1;
+      color: #0E0F11;
+      /* Fallback */
+      -webkit-text-fill-color:  #f1e4d4;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color:  #131313;
+      text-stroke: 1px  #131313;
+    }
+
+    @keyframes floating{
+      0%, 100%{
+        transform: translateY(0px);
+      }
+      50%{
+        transform: translateY(100px);
+      }
+    }
+
+
+     .edgtf-ils-item-title img{
+      display: none;
+    }
+      .edgtf-ils-item-title:hover img {
+       display: flex;
+       position: fixed;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       z-index: 999;
+       pointer-events: none;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+
+
+    }
+
+
+    /* styling our header */
+    header   {
+      align-items: center;
+      position: relative;
+      padding: 20px 30px;
+      background-color: rgba(121,137,111,0.5);
+
+    }
+
+    /* logo */
+    #logo         {
+      display: inline-block;
+      text-decoration: none;
+    }
+    #logo img    {
+      width: 250px;
+      height: auto;
+      padding-left: 4vh;
+      vertical-align: middle;
+    }
+
+a {
+      color: #131313;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+a:link {
+  color: #131313;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color:  #131313;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #131313;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #79896f;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.footer{
+    padding-top: 3vh;
+    height: 50px;
+    background-color: rgba(121,137,111,0.5);
+    font-size: 16px;
+    text-align: center;
+    font-weight: normal;
+    color: #131313;
+    position: relative;
+    text-transform:uppercase;
+    font-family: 'Bebas Neue', cursive;
+
+    }
+    .omcolor {
+      font-family: 'Bebas Neue', cursive;
+    color: #131313;
+          text-decoration: none !important;
+      		text-transform: uppercase;
+
+      		-webkit-transform: scale(.95);
+      				-ms-transform: scale(.95);
+      						transform: scale(.95);
+
+          -webkit-transition: all .25s linear;
+                  transition: all .25s linear; }
+
+      .omcolor:hover, .omcolor:focus {
+      		color: #fff;
+    font-size: 20px;
+      		-webkit-transform: scale(1);
+      				-ms-transform: scale(1);
+      						transform: scale(1); }
+
+    }
